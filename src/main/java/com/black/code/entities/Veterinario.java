@@ -16,8 +16,8 @@ public class Veterinario {
 	private String nome;
 	private String telefone;
 	private String email;
-	private String crmv;
-	public Veterinario(Long id, String nome, String telefone, String email, String crmv) {
+	private Double crmv;
+	public Veterinario(Long id, String nome, String telefone, String email, Double crmv) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -27,6 +27,7 @@ public class Veterinario {
 	}
 	public Long getId() {
 		return id;
+		
 	}
 	public void setId(Long id) {
 		this.id = id;

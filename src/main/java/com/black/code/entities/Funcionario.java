@@ -13,18 +13,18 @@ public class Funcionario {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	private String name;
+	private String nome;
 	private String cpf;
 	private String telefone;
 	private Double salario;
 	private String email;
 	private String endereco;
 	
-	public Funcionario(Long id, String name, String cpf, String telefone, Double salario, String email,
+	public Funcionario(Long id, String nome, String cpf, String telefone, Double salario, String email,
 			String endereco) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 		this.cpf = cpf;
 		this.telefone = telefone;
 		this.salario = salario;
@@ -41,11 +41,11 @@ public class Funcionario {
 	}
 
 	public String getName() {
-		return name;
+		return nome;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.nome = name;
 	}
 
 	public String getCpf() {

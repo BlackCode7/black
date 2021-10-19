@@ -13,7 +13,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	private String name;
+	private String nome;
 	private String perfil;
 	private String email;
 	private String endereco;
@@ -22,10 +22,10 @@ public class User {
 	public User() {}
 	//construtor com argumentos
 
-	public User(Long id, String name, String perfil, String email, String endereco) {
+	public User(Long id, String nome, String perfil, String email, String endereco) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 		this.perfil = perfil;
 		this.email = email;
 		this.endereco = endereco;
@@ -40,11 +40,11 @@ public class User {
 	}
 
 	public String getName() {
-		return name;
+		return nome;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.nome = name;
 	}
 
 	public String getCpf() {
