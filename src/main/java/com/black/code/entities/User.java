@@ -14,7 +14,7 @@ public class User {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private String cpf;
+	private String perfil;
 	private String email;
 	private String endereco;
 	
@@ -22,11 +22,11 @@ public class User {
 	public User() {}
 	//construtor com argumentos
 
-	public User(Long id, String name, String cpf, String email, String endereco) {
+	public User(Long id, String name, String perfil, String email, String endereco) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.cpf = cpf;
+		this.perfil = perfil;
 		this.email = email;
 		this.endereco = endereco;
 	}
@@ -48,11 +48,11 @@ public class User {
 	}
 
 	public String getCpf() {
-		return cpf;
+		return perfil;
 	}
 
 	public void setCpf(String cpf) {
-		this.cpf = cpf;
+		this.perfil = cpf;
 	}
 
 	public String getEmail() {
