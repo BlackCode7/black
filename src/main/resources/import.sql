@@ -15,6 +15,11 @@ INSERT INTO tb_veterinarios(nome,telefone,email,crmv)VALUES('Andre','22-2223-333
 INSERT INTO tb_veterinarios(nome,telefone,email,crmv)VALUES('Parle','22-2123-7763','Parle@Parle.com',23001276.57);
 INSERT INTO tb_veterinarios(nome,telefone,email,crmv)VALUES('Aquiles','22-2123-8876','Aquiles@Aquiles.com',2300188.76);
 
-
+								 	                                            
+INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Titi','de rua','vira-lata','Macho', 12);
+INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Luly','caseiro','vira-lata','Femea', 10);
+INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Bolsonaro','caseiro','Sheatsu','Femea', 5);
+INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Pandora','de rua','Labrador','Femea', 22);
+INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Linguiça','de rua','Pitbull','Macho', 1);
 
  

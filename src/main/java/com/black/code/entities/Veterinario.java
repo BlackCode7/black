@@ -27,7 +27,6 @@ public class Veterinario {
 	}
 	public Long getId() {
 		return id;
-		
 	}
 	public void setId(Long id) {
 		this.id = id;
@@ -50,12 +49,13 @@ public class Veterinario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getCrmv() {
+	public Double getCrmv() {
 		return crmv;
 	}
-	public void setCrmv(String crmv) {
+	public void setCrmv(Double crmv) {
 		this.crmv = crmv;
 	}
+	
 	
 	
 }
