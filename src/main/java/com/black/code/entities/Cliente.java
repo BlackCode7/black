@@ -7,29 +7,30 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tb_veterinarios")
-public class Veterinario {
-	
+@Table(name="tb_clientes")
+public class Cliente {
+	//nome,telefone,endereco,email
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long idveterinarios;
+	private Long idcliente;
 	private String nome;
 	private String telefone;
+	private String endereco;
 	private String email;
-	private Double crmv;
-	public Veterinario(Long idveterinarios, String nome, String telefone, String email, Double crmv) {
+	
+	public Cliente(Long idcliente, String nome, String telefone, String endereco, String email) {
 		super();
-		this.idveterinarios = idveterinarios;
+		this.idcliente = idcliente;
 		this.nome = nome;
 		this.telefone = telefone;
+		this.endereco = endereco;
 		this.email = email;
-		this.crmv = crmv;
 	}
-	public Long getId() {
-		return idveterinarios;
+	public Long getIdcliente() {
+		return idcliente;
 	}
-	public void setId(Long idveterinarios) {
-		this.idveterinarios = idveterinarios;
+	public void setIdcliente(Long idcliente) {
+		this.idcliente = idcliente;
 	}
 	public String getNome() {
 		return nome;
@@ -43,19 +44,16 @@ public class Veterinario {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+	public String getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
 	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Double getCrmv() {
-		return crmv;
-	}
-	public void setCrmv(Double crmv) {
-		this.crmv = crmv;
-	}
-	
-	
-	
 }

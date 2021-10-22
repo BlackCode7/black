@@ -12,7 +12,7 @@ public class Funcionario {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private Long idfunciona;
 	private String nome;
 	private String cpf;
 	private String telefone;
@@ -20,10 +20,10 @@ public class Funcionario {
 	private String email;
 	private String endereco;
 	
-	public Funcionario(Long id, String nome, String cpf, String telefone, Double salario, String email,
+	public Funcionario(Long idfunciona, String nome, String cpf, String telefone, Double salario, String email,
 			String endereco) {
 		super();
-		this.id = id;
+		this.idfunciona = idfunciona;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.telefone = telefone;
@@ -33,11 +33,11 @@ public class Funcionario {
 	}
 
 	public Long getId() {
-		return id;
+		return idfunciona;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(Long idfunciona) {
+		this.idfunciona = idfunciona;
 	}
 
 	public String getName() {

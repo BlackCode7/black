@@ -22,4 +22,7 @@ INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Bolsonaro
 INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Pandora','de rua','Labrador','Femea', 22);
 INSERT INTO tb_pacientpets(nome,procedencia,especie,sexo,idade)VALUES('Linguiça','de rua','Pitbull','Macho', 1);
 
- 
+
+INSERT INTO tb_clientes(nome,telefone,endereco,email)VALUES('Ana','2133335555','Travessa teste','Ana@Ana.com');
+
+

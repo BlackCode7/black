@@ -12,15 +12,15 @@ public class PacientePet {
 	//nome, procedência, espécie e sexo
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private Long idpets;
 	private String nome;
 	private String procedencia;
 	private String especie;
 	private String sexo;
 	private Integer idade;
-	public PacientePet(Long id, String nome, String procedencia, String especie, String sexo, Integer idade) {
+	public PacientePet(Long idpets, String nome, String procedencia, String especie, String sexo, Integer idade) {
 		super();
-		this.id = id;
+		this.idpets = idpets;
 		this.nome = nome;
 		this.procedencia = procedencia;
 		this.especie = especie;
@@ -28,10 +28,10 @@ public class PacientePet {
 		this.idade = idade;
 	}
 	public Long getId() {
-		return id;
+		return idpets;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(Long idpets) {
+		this.idpets = idpets;
 	}
 	public String getNome() {
 		return nome;
